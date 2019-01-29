@@ -2,6 +2,29 @@
 ---
 
 @import "{{ site.theme }}";
+.page-header {
+  padding: 40px 96px 40px 96px;
+}
+html {
+    background: url(hmc.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+$body-bg: transparent;
+.bg {
+  /* The image used */
+  background-image: url("hmc.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 body {
     margin: 60px auto;
     width: 70%;
@@ -61,8 +84,8 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
