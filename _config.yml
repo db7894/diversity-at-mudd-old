@@ -1,1 +1,5 @@
+markdown: kramdown
 theme: jekyll-theme-cayman
+
+title: diversity-at-mudd
+description: A centralized home for diversity and inclusion resources at Harvey Mudd College
