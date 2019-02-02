@@ -4,7 +4,9 @@
 @import "{{ site.theme }}";
 .page-header {
   padding: 40px 96px 40px 96px;
+  position: relative;
 }
+
 
 html {
     background: url(hmc.jpg) no-repeat center center fixed;
@@ -14,8 +16,65 @@ html {
     background-size: cover;
 }
 
+
 /*$body-bg: transparent; */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed; /* could also be absolute */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  //z-index: 10;
+  background-color: rgba(86, 61, 124, 0.5);
+}
+
+.layer {
+    background-color: rgba(86, 61, 124, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.hero::before {
+  background-image: url(hmc.jpg);
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.4;
+}
 
 body {
     margin: 60px auto;
@@ -27,6 +86,7 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    position: relative;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -45,7 +105,7 @@ li {
 
 li a {
   display: block;
-  color: red;
+  color: white;
   text-align: center;
   padding: 2px 16px 14px 16px;
   text-decoration: none;
@@ -53,7 +113,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  color: black;
+  color: red;
   background-color: transparent;
 }
 a {
@@ -68,9 +128,9 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.4em;
-    color: #333;
+    color: white; // was #333
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -97,6 +157,8 @@ ul.posts li {
 
 .main-content {
   display: inline-grid;
+  position: relative;
+  z-index: 1;
 }
 
 .grid-container {
