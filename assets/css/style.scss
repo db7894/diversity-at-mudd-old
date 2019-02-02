@@ -86,7 +86,7 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    position: relative;
+    position: fixed;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -94,9 +94,9 @@ nav ul li, footer ul li {
 }
 ul {
   list-style-type: none;
-  margin: 10;
-  padding: 10;
-  //overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 li {
