@@ -811,7 +811,18 @@ a {
 
 .page-header {
   padding: 40px 96px 40px 96px;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center; }
 
 html {
   background: url(hmc.jpg) no-repeat center center fixed;
@@ -848,7 +859,18 @@ html {
 .topnav {
   background-color: transparent;
   opacity: 0.4;
-  overflow: hidden; }
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
