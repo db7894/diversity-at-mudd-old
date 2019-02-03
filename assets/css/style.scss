@@ -5,6 +5,18 @@
 .page-header {
   padding: 40px 96px 40px 96px;
   position: relative;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 
@@ -39,6 +51,18 @@ html { font-size:100%; }
   //background-color:rgb(0, 70, 150);
   opacity: 0.4;
   overflow: hidden;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 /* Style the links inside the navigation bar */
