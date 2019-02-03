@@ -64,7 +64,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -85,14 +87,16 @@
   <body>
 
     <header class="page-header" role="banner">
-      <nav>
+      <!-- <nav> -->
+      <div class="topnav">
           <ul>
               <li><a href="/diversity-at-mudd">Home</a></li>
               <li><a href="/diversity-at-mudd/resources">Resources</a></li>
               <li><a href="/diversity-at-mudd/people">People</a></li>
               <li><a href="/diversity-at-mudd/groups">Groups</a></li>
           </ul>
-      </nav>
+      </div>
+      <!-- </nav> -->
       <br><br>
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>

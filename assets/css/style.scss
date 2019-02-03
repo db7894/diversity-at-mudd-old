@@ -16,6 +16,31 @@ html {
     background-size: cover;
 }
 
+/*navbar*/
+.topnav {
+  background-color: transparent;
+  //background-color:rgb(0, 70, 150);
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  background-color: #166E82;
+  border-bottom: 3px solid red;
+}
+
 
 /*$body-bg: transparent; */
 
@@ -121,9 +146,9 @@ a {
     text-decoration: none;
     color: #999;
 }
-a:hover {
-    text-decoration: underline;
-}
+// a:hover {
+//     text-decoration: underline;
+// }
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';

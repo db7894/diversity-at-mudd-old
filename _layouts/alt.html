@@ -2,7 +2,9 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <!-- <div class="layer"> -->
       <head>
-
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         {% if site.google_analytics %}
           <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
           <script>
@@ -24,14 +26,16 @@
     <header class="page-header">
       <body>
 
-    	     <nav>
-    	    	   <ul>
-    	        	   <li><a href="/diversity-at-mudd">Home</a></li>
-    		           <li><a href="/diversity-at-mudd/resources">Resources</a></li>
-    			         <li><a href="/diversity-at-mudd/people">People</a></li>
-    			         <li><a href="/diversity-at-mudd/groups">Groups</a></li>
-    	    	   </ul>
-    	     </nav>
+    	     <!--<nav>
+    	    	   <ul>-->
+               <div class="topnav">
+    	        	   <a style="display: block" href="/diversity-at-mudd">Home</a>
+    		           <a href="/diversity-at-mudd/resources">Resources</a>
+    			         <a href="/diversity-at-mudd/people">People</a>
+    			         <a href="/diversity-at-mudd/groups">Groups</a>
+                </div>
+               <!--</ul>
+    	     </nav>-->
 
 
 
